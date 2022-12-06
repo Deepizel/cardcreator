@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Space+Grotesk:wght@500&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  /* overflow-y: hidden;
+  overflow-x: hidden; */
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+}
+
+.col-lg-4 {
+  background-image: linear-gradient(
+    to right bottom,
+    #260935,
+    #401451,
+    #391036,
+    #322c5c,
+    #491a37,
+    #4b1d3a,
+    #322c5c,
+    #21082f,
+    #21082f,
+    #21082f,
+    #21082f,
+    #21082f
+  );
+  height: 99vh;
+}
+
+.frontcard {
+  height: 180px;
+  width: 350px;
+background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);  position: absolute;
+  top: 15%;
+  left: 10%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.frontcard p{
+  margin-top: 40px;
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+.name{
+  display: flex;
+  justify-content: space-around;
+}
+#cardno{
+  font-size: 29px;
+  margin-top: 60px;
+}
+.name p{
+  color: white;
+  font-size: 20px;
+}
+.backcard {
+  height: 180px;
+  width: 350px;
+  background-color: white;
+  position: absolute;
+  top: 305px;
+  left: 28%;
+  border-radius: 5px;
+  background-color: grey;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.whitesection {
+  background-color: black;
+  height: 30px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.greysection {
+  background-color: whitesmoke;
+  height: 30px;
+  width: 80%;
+  margin-top: 15px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: end;
+}
+
+label {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+input {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0px 10px;
+  border: 1px grey solid;
+}
+button {
+  width: 300px;
+  height: 30px;
+  color: white;
+  border: 1px solid grey;
+  margin-top: 20px;
+  background-color: rgb(34, 9, 48);
+  border-radius: 5px;
+}
+input:focus {
+  outline: none;
+}
+#for {
+  width: 30px;
+}
+#cvc {
+  width: 70px;
+}
+form {
+  margin-top: 30%;
+  margin-left: 50%;
+}
