@@ -2,10 +2,10 @@
     <div class="row d-flex">
         <div class="col-lg-4">
           <div class="cardsection">
-             <div class="frontcard">
-               <p id="cardno">0000 0000 0000 0000</p>
+             <div class="frontcard" [style.backgroundColor]="change?'red':'blue'">
+               <p id="cardno">{{DisplayCardNumber}}</p>
                 <div class="name">
-                  <p>Jane Applesauce</p>
+                  <p>{{DisplayName}}</p>
                   <p>00/00</p>
                 </div>
              </div>
@@ -13,7 +13,7 @@
                 <div class="whitesection">
               </div>
               <div class="greysection">
-               <p>000</p>
+               <p>{{DisplayCcc}}</p>
               </div>
              </div>
           </div>
@@ -22,14 +22,17 @@
          <div class="inputsection">
               <form action="submit">
                <label>CARDHOLDER'S NAME</label><br>
-               <input type="text" placeholder="eg Jane Applesauce"><br>
+               <input type="text" #name (change)="displayName(name.value)" placeholder="eg Jane Applesauce"><br>
                <label for="">CARD NUMBER</label><br>
-               <input type="text" placeholder="eg 0023 4567 0875 0033"><br>
+               <input type="text" #cardnumber (change)="displayCardNumber(cardnumber.value)" placeholder="eg 0023 4567 0875 0033"><br>
                <label for="">EXP.DATE (MM/YY)</label>
                <label for="">CVC</label> <br>
-               <input id="for" type="text"><input id="for" class="mx-2" type="text"> <input id="cvc"class="mx-3" type="text"><br>
+               <input id="for" id="exp" type="text"><input id="for" class="mx-2" type="text"> <input id="cvc" #cvc (change)="displayCCC(cvc.value)" class="mx-3" type="text"><br>
+               <button id="switch" type="button" (click)="colorChange()">Color option</button> <br>
                <button>CONFIRM</button>
+               
               </form>
+              
          </div>
        </div>
     
