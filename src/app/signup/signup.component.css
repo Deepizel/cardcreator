@@ -75,6 +75,8 @@ label{
 }
 input{
   width: 300px;
+  height: 30px;
+  border-radius: 5px;
 }
 form{
     margin-left: 30px;
@@ -104,4 +106,46 @@ button{
   background-color: green;
   margin-left: 40px;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .formClass{
+    margin-left:-3px;
+  }
+  .slider-thumb::before{
+    margin-left: 0px;
+  }
+  h3{
+    margin-left: 80px;
+    font-size: 30px;
+    padding: 0px;
+  }
+  h3.px-2{
+    padding: 0;
+  }
+  #definer{
+    margin-left: 130px;
+  }
+  input{
+    margin-bottom: 5px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    margin-left: 30px;
+  }
+
+  .loginsect{
+    position: absolute;
+    left: 5px;
+  }
 }
